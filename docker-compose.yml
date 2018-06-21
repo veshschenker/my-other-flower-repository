@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  mongo:
+    image: employees-db:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - employee-mongo-data:/data/db
+volumes:
+  employee-mongo-data:
